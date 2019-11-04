@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo " enter the name of security group to check"
+read name 
+if [ source= 0.0.0.0/0]: then 
+echo " the menstioned security group is exposed to external world "
+else,
+echo " this security group is not exposed to external world"
+fi 
