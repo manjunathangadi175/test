@@ -1,0 +1,15 @@
+---
+ hosts: localhost
+ become: yes
+ 
+ -name: creating user
+  user: name= ansadm password=ansadm
+        sudo=true
+        
+  env: 
+   - JAVA_OPT=Xmx1g
+   -JENKINS_HOME=/var/lib/jenkins
+   security group:
+      port: 22 
+      access: custom 
+      ip: public
