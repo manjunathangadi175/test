@@ -1,0 +1,20 @@
+version: '3'
+services: 
+  NodeJs
+  container: NodeJs
+   user: root 
+   image: NodeJs-12.5.0
+  ports: 
+     8500:8080
+     
+   Niginx:
+     container: Nginx
+     user:Niginx
+     image: Nginx-1.16.0
+     
+   Redis
+     container: Redis
+     user: redis
+     image: Redis-5.0.4
+     
+     
