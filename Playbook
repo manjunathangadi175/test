@@ -11,5 +11,5 @@
    -JENKINS_HOME=/var/lib/jenkins
    security group:
       port: 22 
-      access: custom 
+      source: custom 
       ip: public
